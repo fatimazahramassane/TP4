@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classer 3 Nombres</title>
+</head>
+<body>
+   
+
+    <script>
+        function orderNumbers() {
+            // Saisie des 3 nombres
+            let n1 = parseFloat(prompt("Entrer valeur 1:"));
+            let n2 = parseFloat(prompt("Entrer valeur 2:"));
+            let n3 = parseFloat(prompt("Entrer valeur 3:"));
+
+            let premier, deuxieme, troisieme;
+
+            // Comparaison pour trouver l'ordre croissant
+            if (n1 <= n2 && n1 <= n3) {
+                premier = n1;
+                if (n2 <= n3) {
+                    deuxieme = n2;
+                    troisieme = n3;
+                } else {
+                    deuxieme = n3;
+                    troisieme = n2;
+                }
+            } else if (n2 <= n1 && n2 <= n3) {
+                premier = n2;
+                if (n1 <= n3) {
+                    deuxieme = n1;
+                    troisieme = n3;
+                } else {
+                    deuxieme = n3;
+                    troisieme = n1;
+                }
+            } else {
+                premier = n3;
+                if (n1 <= n2) {
+                    deuxieme = n1;
+                    troisieme = n2;
+                } else {
+                    deuxieme = n2;
+                    troisieme = n1;
+                }
+            }
+
+          
+            
+            console.log("Les nombres dans l'ordre croissant : " + premier + ", " + deuxieme + ", " + troisieme);
+        
+        }
+        orderNumbers()
+    </script>
+</body>
+</html>

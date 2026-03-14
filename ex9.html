@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+function Raca1() {
+    
+    let A = parseFloat(prompt("Pour un nombre A compris entre 1 et 100 :"));
+    
+    if (A <= 0 || A > 100) {
+        console.log("Veuillez entrer un nombre compris entre 1 et 100.");
+        return;
+    }
+
+    
+    let u = A / 2; 
+    let precision = 1e-6; 
+    let un;
+
+    do {
+        un = u;
+        u = 0.5 * (u + A / u);
+    } while (Math.abs(u * u - A) >= precision);
+
+    console.log("Valeur approchée de la racine carrée =", u);
+}
+
+
+Raca1();
+    </script>
+</body>
+</html>

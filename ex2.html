@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function date(){
+   var  Sec = prompt("entrer valeur :");
+   c=Sec / 60 /60/24
+   jour=parseInt(c)
+   console.log("jour",jour)
+   h=(c-jour)*24
+   heur=parseInt(h)
+   console.log("heur",heur)
+   m=(h-heur)*60
+   minute=parseInt(m)
+   console.log("minute",minute)
+   s=(m-minute)*60
+   second=parseInt(s)
+   console.log("second",second)
+   console.log("cette durée équivaut à ",jour," jours ",heur ,"heures ",minute ,"minutes ",second ,"secondes")
+
+}
+date()</script>
+</body>
+</html>

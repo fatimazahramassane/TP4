@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Exercice 4 : Affichage de motifs - escaliers
+
+// a) Fonction triangle1 utilisant while
+function triangle1(taille) {
+    let i = 1;
+    while (i <= taille) {
+        let j = 1;
+        let ligne = "";
+        while (j <= i) {
+            ligne += "*";
+            j++;
+        }
+        console.log(ligne);
+        i++;
+    }
+}
+
+// b) Fonction triangle2 utilisant for
+function triangle2(taille) {
+    for (let i = 1; i <= taille; i++) {
+        let ligne = "";
+        for (let j = 1; j <= i; j++) {
+            ligne += "*";
+        }
+        console.log(ligne);
+    }
+}
+
+// Exemple d'exécution
+let taille = prompt('enter value :');
+console.log("Triangle avec while :");
+triangle1(taille);
+
+console.log("\nTriangle avec for :");
+triangle2(taille);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>function Amlioerer(){
+   var  Sec = prompt("entrer valeur :");
+   c=Sec / 60 /60/24
+   jour=parseInt(c)
+   console.log("jour",jour)
+   h=(c-jour)*24
+   heur=parseInt(h)
+   console.log("heur",heur)
+   m=(h-heur)*60
+   minute=parseInt(m)
+   console.log("minute",minute)
+   s=(m-minute)*60
+   second=parseInt(s)
+   console.log("second",second)
+   a=jour+" jour "
+   b=heur+" heure "
+   c=minute+" minute "
+   d=second +" seconde"
+  
+   if (jour >1 ){
+    a=a+"s"
+   }
+   if(heur >1 ){
+    b=b+"s"
+
+   }
+   if(minute >1 ){
+    c=c+"s"
+
+   }
+   if(second >1 ){
+    d=d+"s"
+
+   }
+   
+   if (jour ==0 ){
+    a=""
+   }
+   if(heur ==0 ){
+    b=""
+
+   }
+   if(minute ==0 ){
+    c=""
+
+   }
+   if(second ==0 ){
+    d=""
+
+   }
+   
+   console.log("cette durée équivaut à ",a,b,c,d)
+
+}
+Amlioerer()
+</script>
+</body>
+</html>

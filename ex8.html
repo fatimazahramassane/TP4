@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+
+function Fibo1() {
+    let n = parseInt(prompt("Entrez le rang n du terme de Fibonacci :"));
+
+    if (n < 0) {
+        console.log("Le rang doit être un entier positif.");
+        return;
+    }
+
+    let u0 = 0;
+    let u1 = 1;
+    let un;
+
+    if (n === 0) {
+        un = u0;
+    } else if (n === 1) {
+        un = u1;
+    } else {
+        for (let i = 2; i <= n; i++) {
+            un = u0 + u1;
+            u0 = u1;
+            u1 = un;
+        }
+    }
+
+    console.log("Le terme de rang", n, "de la suite de Fibonacci est :", un);
+}
+// Exercice 6-b : Premier terme supérieur à une valeur donnée
+
+function Fibo2() {
+    let valeur = parseInt(prompt("Entrez la valeur de référence :"));
+
+    if (valeur < 0) {
+        console.log("Veuillez entrer une valeur positive.");
+        return;
+    }
+
+    let u0 = 0;
+    let u1 = 1;
+    let un = 0;
+    let rang = 1;
+
+    if (valeur < u0) {
+        console.log("Le premier terme supérieur à", valeur, "est", u0, "au rang 0");
+        return;
+    } else if (valeur < u1) {
+        console.log("Le premier terme supérieur à", valeur, "est", u1, "au rang 1");
+        return;
+    }
+
+    while (un <= valeur) {
+        un = u0 + u1;
+        u0 = u1;
+        u1 = un;
+        rang++;
+    }
+
+    console.log("Le premier terme supérieur à", valeur, "est", un, "au rang", rang);
+}
+
+Fibo1();
+
+Fibo2();
+
+    </script>
+</body>
+</html>

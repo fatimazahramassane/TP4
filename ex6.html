@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// Exercice 4-bis : Affichage de motifs - pyramide
+
+function pyramide(taille) {
+    for (let i = 1; i <= taille; i++) {
+        let ligne = "";
+
+        // Ajouter les espaces au début de la ligne
+        for (let j = 1; j <= taille - i; j++) {
+            ligne += " ";
+        }
+
+        // Ajouter les étoiles (2*i - 1 pour obtenir les nombres impairs)
+        for (let k = 1; k <= 2 * i - 1; k++) {
+            ligne += "*";
+        }
+
+        console.log(ligne);
+    }
+}
+
+// Exemple d'exécution
+let taille = parseInt(prompt("Donnez la taille du motif :"));
+pyramide(taille);
+
+</script>
+</body>
+</html>
