@@ -1,6 +1,7 @@
 # TP 4 — Introduction à JavaScript
 
-> **Master SDIA** 
+> **Master SDIA**
+>  
 ###Massane Fatima-Zahra
 ---
 
@@ -166,8 +167,7 @@ Sortie : Valeur approchée de la racine carrée = 4.385202389856321
 ##  Technologies utilisées
 
 - **HTML5**
-- **JavaScript Vanilla** (ES6+)
-- Aucune dépendance externe
+- **JavaScript **
 
 ---
 
