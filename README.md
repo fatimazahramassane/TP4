@@ -1,11 +1,10 @@
-# 📘 TP n°1 — Introduction à JavaScript
+# TP 4 — Introduction à JavaScript
 
-> **Master SDIA** — Technologies du Web & Web Sémantique  
-> École Normale Supérieure de l'Enseignement Technique de Mohammedia
+> **Master SDIA** 
 ###Massane Fatima-Zahra
 ---
 
-## 📁 Structure des fichiers
+## Structure des fichiers
 
 ```
 TP4/
